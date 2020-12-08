@@ -1,0 +1,7 @@
+labscan = ct.get_filename_lab(1,1);
+lab1 = reshape(labscan,size(:);
+labtruth = ct.get_filename_lab(1,4);
+lab0 = labtruth(:);
+
+
+

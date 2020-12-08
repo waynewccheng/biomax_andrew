@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImageMetadata>
+  <Information>
+    <Document>
+      <UserName>lamon</UserName>
+    </Document>
+    <Image>
+      <SizeX>894</SizeX>
+      <SizeY>552</SizeY>
+      <PixelType>Bgr24</PixelType>
+      <ComponentBitCount>8</ComponentBitCount>
+      <Dimensions>
+        <Channels>
+          <Channel Id="Channel:0">
+            <PixelType>Bgr24</PixelType>
+            <ComponentBitCount>8</ComponentBitCount>
+          </Channel>
+        </Channels>
+        <T>
+          <StartTime>0001-01-01T00:00:00</StartTime>
+        </T>
+      </Dimensions>
+    </Image>
+  </Information>
+  <Scaling>
+    <AutoScaling>
+      <Type>Measured</Type>
+      <Objective>Objective.420650-9901-000</Objective>
+      <CameraAdapter>CameraAdapter.1x</CameraAdapter>
+      <ObjectiveName>Plan-Apochromat 20x/0.8 M27</ObjectiveName>
+      <CameraName>Hitachi HV-F202SCL</CameraName>
+      <CameraAdapterMagnification>1</CameraAdapterMagnification>
+      <CameraPixelDistance>4.4,4.4</CameraPixelDistance>
+      <CreationDateTime>10/22/2020 17:08:46</CreationDateTime>
+    </AutoScaling>
+    <Items>
+      <Distance Id="X">
+        <Value>1.2913943132356054E-06</Value>
+        <DefaultUnitFormat>µm</DefaultUnitFormat>
+      </Distance>
+      <Distance Id="Y">
+        <Value>1.2913943132356054E-06</Value>
+        <DefaultUnitFormat>µm</DefaultUnitFormat>
+      </Distance>
+    </Items>
+  </Scaling>
+  <DisplaySetting>
+    <Channels>
+      <Channel Id="Channel:0" Name="C1">
+        <BitCountRange>8</BitCountRange>
+        <DyeName>Dye1</DyeName>
+        <ColorMode>None</ColorMode>
+      </Channel>
+    </Channels>
+  </DisplaySetting>
+  <Layers />
+</ImageMetadata>

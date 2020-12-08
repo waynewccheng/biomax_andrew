@@ -1,0 +1,55 @@
+% Q: compare the histograms
+
+chdata = {};
+
+for i=1:8
+    for k=1:4
+        ch = ColorHistogramLAB(ct.get_filename_lab(i,k));
+        chdata{i,k} = ch;
+    end
+end
+
+
+% mk = '---:';
+% for i=1:8
+%     clf
+%     
+%     %subplot(2,4,i)
+%     hold on
+%     
+%     for k=1:4
+%         y = datasorted{i,k};
+%         x = [1:length(y)]/length(y);
+%         plot(y(1:10),mk(k));
+%     end
+%     
+%     legend('hamamatsu','leica','zeiss','truth');
+%     title(sprintf('%d',i))
+%     
+%     saveas(gcf,sprintf('d%d.png',i))
+% end
+% 
+% return
+
+mk = '---:';
+for i=1:8
+    clf
+    
+    subplot(2,4,i)
+    hold on
+    
+    for k=1:4
+        ch = chdata{i,k};
+        y = ch.mcdfm
+        x = [1:length(y)]/length(y);
+        plot(x,y,mk(k));
+    end
+    
+    axis equal
+    axis([0 1 0 1])
+    
+    legend('hamamatsu','leica','zeiss','truth');
+    title(sprintf('%d',i))
+    
+    saveas(gcf,sprintf('%d.png',i))
+end
