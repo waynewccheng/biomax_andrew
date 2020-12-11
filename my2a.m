@@ -1,4 +1,4 @@
-% Q: compare the histograms
+% Q: compare the histograms after remove the background
 
 chdata = {};
 

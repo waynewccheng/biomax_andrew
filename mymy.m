@@ -1,3 +1,7 @@
+% Q: what is the color transform between two images?
+% A: use 3D quiver to show the color differences as vectors
+% for one image pair
+
 i = 8;
 k = 2;
 [labscan labtruth] = ct.get_lab_data(i,k);
@@ -16,15 +20,20 @@ labindex = floor(labtruth1);
 
 q = [labtruth1 labscan1 labindex];
 
+% pick one bin
+% the most populated one?
+rank = 200
 targetindex = [99 0 -1]
-targetindex = chdata{i,4}.mLabNonwhite(100,2:4)
+targetindex = chdata{i,4}.mLabNonwhite(rank,2:4)
 
 mask = q(:,7)==targetindex(1) & q(:,8)==targetindex(2) & q(:,9)==targetindex(3);
-nnz(mask)
+num_vectors = nnz(mask)
 
 q2 = q(mask,:);
 qdiff = q2(:,4:6) - q2(:,1:3);
 qdE = sum(qdiff.^2,2).^0.5;
+qdiff_mean = mean(qdiff,1)
+qdE_mean = mean(qdE,1)
 
 clf
 hold on

@@ -1,3 +1,6 @@
+% Q: which color in CIELAB is the most populated?
+% A: generate the 3D bubble plot
+
 for i=1:8
     clf
     for k=1:4

@@ -19,7 +19,7 @@
 %     end
 % end
 
-
+% plot only the top 10 bins
 mk = '---:';
 for i=1:8
     clf
@@ -41,6 +41,7 @@ end
 
 return
 
+% plot the bins
 mk = '---:';
 for i=1:8
     clf

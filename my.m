@@ -1,3 +1,4 @@
+% generate histogram for all images
 data = zeros(8,4);
 for i=1:8
     for k=1:4
